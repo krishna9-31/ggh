@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url("Desktop - 11.png.png") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Main Container */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            margin-right: 439px;
+        }
+
+        /* Login Form Styling */
+        .login-form {
+            background-color: rgba(223, 244, 212, 0.9);
+            /* Light green transparent */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        /* Form Elements */
+        .login-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-form label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>LOGIN</h2>
+            <form id="loginForm" onsubmit="return handleLogin(event)">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            // Prevent form from submitting the traditional way
+            event.preventDefault();
+
+            // Redirect the user to the desired URL after submission
+            window.location.href = "https://krishna9-31.github.io/farmconnect/";
+        }
+    </script>
+</body>
+
+</html>
